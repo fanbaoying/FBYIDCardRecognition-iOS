@@ -74,7 +74,7 @@
     // 提示标签
     CGPoint center = self.center;
     center.x = CGRectGetMaxX(_IDCardScanningWindowLayer.frame) + 20;
-    [self addTipLabelWithText:@"将身份证人像面置于此区域内，头像对准，扫描" center:center];
+    [self addTipLabelWithText:@"请将有身份证号码面置于此区域内进行扫描" center:center];
     
     /*
      CGPoint center1 = (CGPoint){CGRectGetMidX(_facePathRect), CGRectGetMidY(_facePathRect)};
