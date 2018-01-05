@@ -14,6 +14,9 @@
 #define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
 @interface IDCardDetailViewController ()
 
+@property(strong,nonnull)NSArray *contentArr;
+@property(strong,nonnull)NSArray *titleArr;
+
 @end
 
 @implementation IDCardDetailViewController
@@ -25,8 +28,7 @@
     self.view.backgroundColor = [UIColor whiteColor];
     self.navigationItem.title = @"身份证详细信息";
     
-//    NSLog(@"%@------",_IDInfo);
-//    NSLog(@"%@++++++",_IDImage);
+    NSLog(@"ctype====%c",_IDInfo.type);
     [self cardImage];
     
     [self content];
@@ -45,14 +47,26 @@
 
 - (void)content {
     
-    NSArray *titleArr = @[@"姓名：",@"性别：",@"民族：",@"住址：",@"ID号："];
-    NSArray *contentArr = @[_IDInfo.name,_IDInfo.gender,_IDInfo.nation,_IDInfo.address,_IDInfo.num];
     
-    for (int i = 0; i < titleArr.count; i ++) {
+    
+    if(_IDInfo.num == NULL){
+        
+        _titleArr = @[@"签发机关：",@"有效期："];
+        _contentArr = @[_IDInfo.issue,_IDInfo.valid];
+        
+    }else{
+        
+        _titleArr = @[@"姓名：",@"性别：",@"民族：",@"住址：",@"ID号："];
+        _contentArr = @[_IDInfo.name,_IDInfo.gender,_IDInfo.nation,_IDInfo.address,_IDInfo.num];
+        
+    }
+    
+    
+    for (int i = 0; i < _titleArr.count; i ++) {
         int count = 50*i;
         
         UILabel *titleLab = [[UILabel alloc]initWithFrame:CGRectMake(10, SCREEN_HEIGHT/3+100+count, SCREEN_WIDTH/3, 50)];
-        titleLab.text = titleArr[i];
+        titleLab.text = _titleArr[i];
         [self.view addSubview:titleLab];
         
         UILabel *lab = [[UILabel alloc]initWithFrame:CGRectMake(10, SCREEN_HEIGHT/3+150+count, SCREEN_WIDTH-20, 1)];
@@ -61,7 +75,7 @@
         
         UILabel *contentLab = [[UILabel alloc]initWithFrame:CGRectMake(SCREEN_WIDTH/3, SCREEN_HEIGHT/3+100+count, SCREEN_WIDTH*2/3-30, 50)];
         contentLab.numberOfLines = 0;
-        contentLab.text = contentArr[i];
+        contentLab.text = _contentArr[i];
         [self.view addSubview:contentLab];
     }
     

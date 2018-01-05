@@ -10,6 +10,8 @@
 
 #import "IDCardCaptureViewController.h"
 
+#import "TIDCardCaptureViewController.h"
+
 #define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
 #define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
 @interface ViewController ()
@@ -31,11 +33,25 @@
     [IdCardBtn setTitle:@"身份证识别" forState:0];
     
     [self.view addSubview:IdCardBtn];
+    
+    UIButton *TWIdCardBtn = [[UIButton alloc]initWithFrame:CGRectMake(SCREEN_WIDTH/4, 250, SCREEN_WIDTH/2, 50)];
+    TWIdCardBtn.backgroundColor = [UIColor lightGrayColor];
+    [TWIdCardBtn addTarget:self action:@selector(TWIdCardBtn:) forControlEvents:UIControlEventTouchUpInside];
+    [TWIdCardBtn setTitle:@"身份证国徽面识别" forState:0];
+    
+    [self.view addSubview:TWIdCardBtn];
 }
 
 - (void)IdCardBtn:(UIButton *)sender {
     
     IDCardCaptureViewController *idcvc = [[IDCardCaptureViewController alloc]init];
+    
+    [self.navigationController pushViewController:idcvc animated:YES];
+}
+
+- (void)TWIdCardBtn:(UIButton *)sender {
+    
+    TIDCardCaptureViewController *idcvc = [[TIDCardCaptureViewController alloc]init];
     
     [self.navigationController pushViewController:idcvc animated:YES];
 }
