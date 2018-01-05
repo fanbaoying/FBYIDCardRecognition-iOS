@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4582D9091FFF2D4D00B85FC5 /* TIDCardCaptureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4582D9081FFF2D4D00B85FC5 /* TIDCardCaptureViewController.m */; };
+		4582D90F1FFF582200B85FC5 /* TFBYIDCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4582D90E1FFF582200B85FC5 /* TFBYIDCardView.m */; };
 		459581DB1FF60E630084C4A3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 459581DA1FF60E630084C4A3 /* AppDelegate.m */; };
 		459581DE1FF60E630084C4A3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 459581DD1FF60E630084C4A3 /* ViewController.m */; };
 		459581E11FF60E630084C4A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 459581DF1FF60E630084C4A3 /* Main.storyboard */; };
@@ -20,7 +21,7 @@
 		459582181FF610F10084C4A3 /* FBYIDCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 459582171FF610F10084C4A3 /* FBYIDCardView.m */; };
 		4595821B1FF611E10084C4A3 /* IDInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 459582191FF611E10084C4A3 /* IDInfo.m */; };
 		459582221FF611FD0084C4A3 /* zocr0.lib in Resources */ = {isa = PBXBuildFile; fileRef = 4595821F1FF611FD0084C4A3 /* zocr0.lib */; };
-		459582231FF611FD0084C4A3 /* libexidcardios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 459582211FF611FD0084C4A3 /* libexidcardios.a */; };
+		459582231FF611FD0084C4A3 /* liscanidcardios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 459582211FF611FD0084C4A3 /* liscanidcardios.a */; };
 		459582261FF612790084C4A3 /* IDCardDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 459582251FF612790084C4A3 /* IDCardDetailViewController.m */; };
 		459582291FF612E10084C4A3 /* UIImage+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 459582281FF612E10084C4A3 /* UIImage+Extend.m */; };
 		4595822C1FF612F20084C4A3 /* RectManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4595822B1FF612F20084C4A3 /* RectManager.m */; };
@@ -48,6 +49,8 @@
 /* Begin PBXFileReference section */
 		4582D9071FFF2D4D00B85FC5 /* TIDCardCaptureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TIDCardCaptureViewController.h; sourceTree = "<group>"; };
 		4582D9081FFF2D4D00B85FC5 /* TIDCardCaptureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TIDCardCaptureViewController.m; sourceTree = "<group>"; };
+		4582D90D1FFF582200B85FC5 /* TFBYIDCardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFBYIDCardView.h; sourceTree = "<group>"; };
+		4582D90E1FFF582200B85FC5 /* TFBYIDCardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFBYIDCardView.m; sourceTree = "<group>"; };
 		459581D61FF60E630084C4A3 /* FBYIDCardRecognition-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FBYIDCardRecognition-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		459581D91FF60E630084C4A3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		459581DA1FF60E630084C4A3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -73,7 +76,7 @@
 		4595821D1FF611FD0084C4A3 /* commondef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = commondef.h; sourceTree = "<group>"; };
 		4595821F1FF611FD0084C4A3 /* zocr0.lib */ = {isa = PBXFileReference; lastKnownFileType = file; path = zocr0.lib; sourceTree = "<group>"; };
 		459582201FF611FD0084C4A3 /* excards.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = excards.h; sourceTree = "<group>"; };
-		459582211FF611FD0084C4A3 /* libexidcardios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libexidcardios.a; sourceTree = "<group>"; };
+		459582211FF611FD0084C4A3 /* liscanidcardios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = liscanidcardios.a; sourceTree = "<group>"; };
 		459582241FF612790084C4A3 /* IDCardDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDCardDetailViewController.h; sourceTree = "<group>"; };
 		459582251FF612790084C4A3 /* IDCardDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDCardDetailViewController.m; sourceTree = "<group>"; };
 		459582271FF612E10084C4A3 /* UIImage+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extend.h"; sourceTree = "<group>"; };
@@ -90,7 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				459582231FF611FD0084C4A3 /* libexidcardios.a in Frameworks */,
+				459582231FF611FD0084C4A3 /* liscanidcardios.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,11 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				459582301FF625780084C4A3 /* iconImg */,
-				4595821C1FF611FD0084C4A3 /* libexidcard */,
-				4595820F1FF60FCE0084C4A3 /* FBYTool */,
-				4595820E1FF60FC20084C4A3 /* FBYCategory */,
-				4595820D1FF60FAC0084C4A3 /* FBYModel */,
-				4595820C1FF60F9E0084C4A3 /* FBYView */,
+				4595821C1FF611FD0084C4A3 /* liscanidcard */,
 				4595820B1FF60F8E0084C4A3 /* FBYBase */,
 				459581D91FF60E630084C4A3 /* AppDelegate.h */,
 				459581DA1FF60E630084C4A3 /* AppDelegate.m */,
@@ -175,63 +174,37 @@
 		4595820B1FF60F8E0084C4A3 /* FBYBase */ = {
 			isa = PBXGroup;
 			children = (
+				4595822A1FF612F20084C4A3 /* RectManager.h */,
+				4595822B1FF612F20084C4A3 /* RectManager.m */,
+				4595822D1FF6135D0084C4A3 /* UIAlertController+Extend.h */,
+				4595822E1FF6135D0084C4A3 /* UIAlertController+Extend.m */,
+				459582271FF612E10084C4A3 /* UIImage+Extend.h */,
+				459582281FF612E10084C4A3 /* UIImage+Extend.m */,
+				4595821A1FF611E10084C4A3 /* IDInfo.h */,
+				459582191FF611E10084C4A3 /* IDInfo.m */,
+				459582161FF610F10084C4A3 /* FBYIDCardView.h */,
+				459582171FF610F10084C4A3 /* FBYIDCardView.m */,
 				459582131FF6106B0084C4A3 /* IDCardCaptureViewController.h */,
 				459582141FF6106B0084C4A3 /* IDCardCaptureViewController.m */,
 				459582241FF612790084C4A3 /* IDCardDetailViewController.h */,
 				459582251FF612790084C4A3 /* IDCardDetailViewController.m */,
 				4582D9071FFF2D4D00B85FC5 /* TIDCardCaptureViewController.h */,
 				4582D9081FFF2D4D00B85FC5 /* TIDCardCaptureViewController.m */,
+				4582D90D1FFF582200B85FC5 /* TFBYIDCardView.h */,
+				4582D90E1FFF582200B85FC5 /* TFBYIDCardView.m */,
 			);
 			path = FBYBase;
 			sourceTree = "<group>";
 		};
-		4595820C1FF60F9E0084C4A3 /* FBYView */ = {
-			isa = PBXGroup;
-			children = (
-				459582161FF610F10084C4A3 /* FBYIDCardView.h */,
-				459582171FF610F10084C4A3 /* FBYIDCardView.m */,
-			);
-			path = FBYView;
-			sourceTree = "<group>";
-		};
-		4595820D1FF60FAC0084C4A3 /* FBYModel */ = {
-			isa = PBXGroup;
-			children = (
-				4595821A1FF611E10084C4A3 /* IDInfo.h */,
-				459582191FF611E10084C4A3 /* IDInfo.m */,
-			);
-			path = FBYModel;
-			sourceTree = "<group>";
-		};
-		4595820E1FF60FC20084C4A3 /* FBYCategory */ = {
-			isa = PBXGroup;
-			children = (
-				4595822D1FF6135D0084C4A3 /* UIAlertController+Extend.h */,
-				4595822E1FF6135D0084C4A3 /* UIAlertController+Extend.m */,
-				459582271FF612E10084C4A3 /* UIImage+Extend.h */,
-				459582281FF612E10084C4A3 /* UIImage+Extend.m */,
-			);
-			path = FBYCategory;
-			sourceTree = "<group>";
-		};
-		4595820F1FF60FCE0084C4A3 /* FBYTool */ = {
-			isa = PBXGroup;
-			children = (
-				4595822A1FF612F20084C4A3 /* RectManager.h */,
-				4595822B1FF612F20084C4A3 /* RectManager.m */,
-			);
-			path = FBYTool;
-			sourceTree = "<group>";
-		};
-		4595821C1FF611FD0084C4A3 /* libexidcard */ = {
+		4595821C1FF611FD0084C4A3 /* liscanidcard */ = {
 			isa = PBXGroup;
 			children = (
 				4595821D1FF611FD0084C4A3 /* commondef.h */,
 				4595821E1FF611FD0084C4A3 /* dicts */,
 				459582201FF611FD0084C4A3 /* excards.h */,
-				459582211FF611FD0084C4A3 /* libexidcardios.a */,
+				459582211FF611FD0084C4A3 /* liscanidcardios.a */,
 			);
-			path = libexidcard;
+			path = liscanidcard;
 			sourceTree = "<group>";
 		};
 		4595821E1FF611FD0084C4A3 /* dicts */ = {
@@ -391,6 +364,7 @@
 				4595821B1FF611E10084C4A3 /* IDInfo.m in Sources */,
 				459582151FF6106B0084C4A3 /* IDCardCaptureViewController.m in Sources */,
 				4595822F1FF6135D0084C4A3 /* UIAlertController+Extend.m in Sources */,
+				4582D90F1FFF582200B85FC5 /* TFBYIDCardView.m in Sources */,
 				459582181FF610F10084C4A3 /* FBYIDCardView.m in Sources */,
 				459582261FF612790084C4A3 /* IDCardDetailViewController.m in Sources */,
 				459581DB1FF60E630084C4A3 /* AppDelegate.m in Sources */,

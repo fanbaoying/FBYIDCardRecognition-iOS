@@ -8,15 +8,13 @@
 
 #import "TIDCardCaptureViewController.h"
 #import <AVFoundation/AVFoundation.h>
-//#import <AssetsLibrary/AssetsLibrary.h>
-//#import "LHSIDCardScaningView.h"
 #import "IDInfo.h"
 #import "excards.h"
 #import "IDCardDetailViewController.h"
 #import "UIImage+Extend.h"
 #import "RectManager.h"
 #import "UIAlertController+Extend.h"
-#import "FBYIDCardView.h"
+#import "TFBYIDCardView.h"
 
 
 @interface TIDCardCaptureViewController ()<AVCaptureVideoDataOutputSampleBufferDelegate, AVCaptureMetadataOutputObjectsDelegate>
@@ -273,8 +271,7 @@
     [self.view.layer addSublayer:self.previewLayer];
     
     // 添加自定义的扫描界面（中间有一个镂空窗口和来回移动的扫描线）
-    FBYIDCardView *FBYIDCard = [[FBYIDCardView alloc] initWithFrame:self.view.frame];
-//    self.faceDetectionFrame = FBYIDCard.facePathRect;
+    TFBYIDCardView *FBYIDCard = [[TFBYIDCardView alloc] initWithFrame:self.view.frame];
     [self.view addSubview:FBYIDCard];
     
     self.metadataOutput.rectOfInterest = [self.previewLayer metadataOutputRectOfInterestForRect:FBYIDCard.facePathRect];
