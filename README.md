@@ -24,11 +24,7 @@ demo新增身份证国徽面识别，可识别出签发机关和有效期。
 #### 1.首先把demo下载下来
 
 #### 2.打开项目将下面的文件拷贝到自己的工程中：
-* libexidcard
-* FBYTool
-* FBYCategory
-* FBYModel
-* FBYView
+* liscanidcard
 * FBYBase
 
 #### 3.添加配置
